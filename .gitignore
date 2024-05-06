@@ -12,3 +12,9 @@ docs/
 
 # Dotenv file
 .env
+
+
+# Foundry Stuff
+broadcast/
+.gas-snapshot
+lib
