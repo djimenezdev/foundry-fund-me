@@ -1,66 +1,54 @@
-## Foundry
+# Foundry Fund Me Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Table of Contents
 
-Foundry consists of:
+1. [Credits](#credits)
+2. [Quick Start](#quick-start)
+3. [About the Project](#about-the-project)
+4. [Resources Used](#resources-used)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## <a id="credits"></a>Credits
 
-## Documentation
+This project was built as part of Cyfrin Updraft Course, created by Patrick Collins.
 
-https://book.getfoundry.sh/
+## <a name="quick-start"></a>Quick Start
 
-## Usage
+To clone and run this project locally, follow these steps:
 
-### Build
+### Make sure to have these dependencies installed:
 
-```shell
-$ forge build
+[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+- You'll know you did it right if you can run git --version and you see a response like git version x.x.x
+
+[Foundry](https://getfoundry.sh/)
+
+- You'll know you did it right if you can run forge --version and you see a response like forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)
+
+### Steps to run the project:
+
+```
+git clone https://github.com/Cyfrin/foundry-fund-me-f23
+cd foundry-fund-me-f23
+forge build
 ```
 
-### Test
+- Now you'll be able to utilize Foundry to build and deploy your project.
 
-```shell
-$ forge test
-```
+## <a name="about-the-project"></a>About the Project
 
-### Format
+This project is a simple crowdfunding platform built with Foundry. It allows users to simply donate a amount of eth above $5 to showcase the power of smart
+contracts
 
-```shell
-$ forge fmt
-```
+## <a name="resources-used"></a>Resources Used
 
-### Gas Snapshots
+- [Cyfrin Upgraft Course](https://updraft.cyfrin.io/)
 
-```shell
-$ forge snapshot
-```
+  - This project was built as part of the Cyfrin Updraft Course, created by Patrick Collins.
+  - Honestly if you want to get into the world of blockchain
+    ready to build then this is the course I highly recommend checking out
+  - Patrick Collins is one of the GOATs in the blockchain space.
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- [Foundry](https://getfoundry.sh/)
+  - Foundry is a tool that allows you to build and deploy smart contracts with ease. It's a great tool for beginners and experts alike.
+  - From Devlopment, Deployment, Testing, and beyond. Foundry has you covered.
